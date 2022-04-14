@@ -1,13 +1,257 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: "Alata";
+  letter-spacing: 3px;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 100vh auto 120px;
+}
+
+.wlc-page {
+  display: grid;
+  grid-template-rows: 80px auto;
+  padding: 0 80px;
+  color: #fff;
+  background-image: url("img/desktop/image-hero.jpg");
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-self: end;
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+}
+
+.navList li {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.small-line {
+  margin: 10px auto 0;
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.navList li:hover .small-line {
+  opacity: 1;
+}
+
+.navList li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero-tag_contain {
+  max-width: 400px;
+  align-self: center;
+  padding: 30px;
+  border: 1px solid #fff;
+}
+
+.header-tag {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-family: "Alata";
+  line-height: 1.2;
+  letter-spacing: 3px;
+}
+
+main {
+  padding: 80px;
+}
+
+.card {
+  position: relative;
+}
+
+.card-img {
+  width: 50%;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-textbox {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 38%;
+  bottom: 0;
+}
+
+.card-textbox .header-tag {
+  letter-spacing: 5px;
+}
+
+.card-textbox p {
+  margin-top: 30px;
+  line-height: 1.6;
+  font-family: "Alata";
+
+  color: rgb(139, 139, 139);
+}
+
+.dashboard {
+  margin-top: 60px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashbaord-header-btn {
+  border: 1px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dashbaord-header-btn:hover {
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+.dashboard-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.dashboard-item-img {
+  position: relative;
+}
+
+.dashboard-item-img::after {
+  content: attr(data-content);
+  max-width: 150px;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  color: #fff;
+  font-family: "Alata";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(240, 248, 255, 0.8);
+}
+
+.dashboard-item-img img {
+  max-width: 100%;
+}
+
+.img-mobile {
+  display: none;
+}
+
+footer {
+  padding: 10px 80px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+}
+
+footer nav {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon .small-line {
+  margin-top: 3px;
+}
+
+.icon:hover .small-line {
+  opacity: 1;
+}
+
+.footer-tag {
+  justify-self: flex-end;
+  font-size: 12px;
+  color: rgb(240, 248, 255, 0.8);
+}
+
+@media screen and (max-width: 993px) {
+  .card {
+    position: static;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .card-textbox {
+    width: 100%;
+    position: static;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dashboard-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    column-gap: 0;
+    row-gap: 10px;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+  }
 }
