@@ -3,18 +3,6 @@ import { useState } from "react";
 function Navbar({ onClick }) {
   const [open, setOpen] = useState(false);
 
-  const styleNav = {
-    height: "100%",
-  };
-
-  const styleNavList = {
-    width: "100%",
-    height: "50%",
-    flexDirection: "column",
-    justifyContent: "space-around",
-    display: "block",
-  };
-
   function isOpen() {
     setOpen((pre) => !pre);
     onClick();

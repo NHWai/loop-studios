@@ -44,50 +44,50 @@ function Main() {
         <div className="dashboard-body">
           <div className="dashboard-item">
             <div data-content="Deep Earth" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_1} />
-              <img className="img-desktop" src={img1} />
+              <img className="img-mobile" src={img_mobile_1} alt="avatar" />
+              <img className="img-desktop" src={img1} alt="avatar" />
             </div>
           </div>
           <div className="dashboard-item">
             <div data-content="NIght Arcade" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_2} />
-              <img className="img-desktop" src={img2} />
+              <img className="img-mobile" src={img_mobile_2} alt="avatar" />
+              <img className="img-desktop" src={img2} alt="avatar" />
             </div>
           </div>
           <div className="dashboard-item">
             <div data-content="soccer team" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_3} />
-              <img className="img-desktop" src={img3} />
+              <img className="img-mobile" src={img_mobile_3} alt="avatar" />
+              <img className="img-desktop" src={img3} alt="avatar" />
             </div>
           </div>
           <div className="dashboard-item">
             <div data-content="the grid" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_4} />
-              <img className="img-desktop" src={img4} />
+              <img className="img-mobile" src={img_mobile_4} alt="avatar" />
+              <img className="img-desktop" src={img4} alt="avatar" />
             </div>
           </div>
           <div className="dashboard-item">
             <div data-content="from up above vr" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_5} />
-              <img className="img-desktop" src={img5} />
+              <img className="img-mobile" src={img_mobile_5} alt="avatar" />
+              <img className="img-desktop" src={img5} alt="avatar" />
             </div>
           </div>
           <div className="dashboard-item">
             <div data-content="pocket borealis" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_6} />
-              <img className="img-desktop" src={img6} />
+              <img className="img-mobile" src={img_mobile_6} alt="avatar" />
+              <img className="img-desktop" src={img6} alt="avatar" />
             </div>
           </div>
           <div className="dashboard-item">
             <div data-content="the curiosity" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_7} />
-              <img className="img-desktop" src={img7} />
+              <img className="img-mobile" src={img_mobile_7} alt="avatar" />
+              <img className="img-desktop" src={img7} alt="avatar" />
             </div>
           </div>
           <div className="dashboard-item">
             <div data-content="make it fisheye" className="dashboard-item-img">
-              <img className="img-mobile" src={img_mobile_8} />
-              <img className="img-desktop" src={img8} />
+              <img className="img-mobile" src={img_mobile_8} alt="avatar" />
+              <img className="img-desktop" src={img8} alt="avatar" />
             </div>
           </div>
         </div>
