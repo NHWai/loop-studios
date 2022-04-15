@@ -36,7 +36,7 @@ function Main() {
       </div>
       <div className="dashboard">
         <div className="dashboard-header">
-          <div className="header-tag">our creation</div>
+          <div className="header-tag no-padding">our creation</div>
           <button className="dashbaord-header-btn">
             <p>view all</p>
           </button>
